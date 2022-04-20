@@ -16,6 +16,7 @@ node(){
 				ls -lart
 				${mvnHome}/bin/mvn clean install
 			"""
+			day = getDayOfWeek()
 		}
 		
 		if(enableScan && day.toString() == "4"){
